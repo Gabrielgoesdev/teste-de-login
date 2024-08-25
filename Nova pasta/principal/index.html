@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: content-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            background-color: #35C074;
+
+        }
+        form{
+            background-color: aliceblue;
+            height: 400px;
+            width: 500px;
+            padding: 25px;
+            margin: 25px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(to right, #4B6B60, #50967E);
+            border-radius: 20px;
+            border: 5px solid black;
+
+        }
+        .conteudo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        h1{
+            padding: 2rem;
+            color: #38413E;
+        }
+        input{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 4rem;
+        }
+        label{
+            text-align: left;
+            padding-left: 17px;
+            font-style: italic;
+            color: aqua;
+        }
+        select{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 4rem;
+        }
+        button{
+            padding: 7px;
+            margin-top: 20px;
+            margin-left: 8px;
+            margin-right: 7px;
+            background-color: aquamarine;
+            color: #38413E;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        ul{
+            display: flex;
+            padding: 15px;
+            text-decoration: none;
+        }
+        li{
+            padding: 1rem;
+            list-style: none;
+            padding: 20px;
+            padding-left: 70px;
+            
+        }
+        a{
+            color: #46C098;
+        }
+        a:hover{
+            color: #2FEBAC ;
+        }
+
+
+    </style>
+
+    
+
+
+</head>
+<body>
+    <form id="form">
+        <div class="conteudo">
+            <h1>Primeiro login</h1>
+            <label for="email" class="required">Email:</label>
+            <input type="email" id="email" placeholder="Insira o email">
+            
+
+            <label for="senha" class="required">Senha:</label>
+            <input type="password" id="senha" placeholder="Insira a Senha">
+
+            <label>qual o objetivo de sua entrada?</label>
+            <select name="opcao" id="opcao">
+                <option value="">?</option>
+                <option value="aluno">desejo entrar para olhar apenas</option>
+                <option value="dev">desejo ajudar no desenvolvimento</option>
+            </select>
+            
+            <button>Entrar</button>
+
+            <ul>
+                <li><a href="#">Esqueci minha senha</a></li>
+                <li><a href="#">Cadastrar</a></li>
+            </ul>
+        </div>
+    <form>
+
+</body>
+    <script>
+        //querySelector = selecionar algo("")
+
+        //recolhendo informações da pagina
+        const form = document.getElementById("form");
+        const campos = document.querySelectorAll(".required")
+        
+        const emailRegex = /^\w+([-+.'])*@\w+([-.']\w+)*\w+([-.]\w)+$/; 
+
+       
+        
+
+    </script>
+</html>
