@@ -5,12 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de Login</title>
     <style>
+        /*modelo de computador */
         *{
             padding: 0;
             margin: 0;
             box-sizing: content-box;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
+        body{
+            background-color: #35C074;
+
+        }
+        form{
+            background-color: aliceblue;
+            height: 400px;
+            width: 700px;
+            padding: 25px;
+            margin: 25px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(to right, #4B6B60, #50967E);
+            border-radius: 20px;
+            border: 5px solid black;
+
+        }
+        .conteudo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        h1{
+            padding: 2rem;
+            color: #38413E;
+        }
+        input{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 4rem;
+        }
+        label{
+            text-align: left;
+            padding-left: 17px;
+            font-style: italic;
+            color: aqua;
+        }
+        select{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 4rem;
+        }
+        button{
+            padding: 7px;
+            margin-top: 20px;
+            margin-left: 8px;
+            margin-right: 7px;
+            background-color: aquamarine;
+            color: #38413E;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        ul{
+            display: flex;
+            padding: 20px;
+            text-decoration: none;
+            
+        }
+        li{
+            padding: 1rem;
+            list-style: none;
+            padding: 25px;
+            padding-left: 120px;
+            
+        }
+        a{
+            color: #46C098;
+            
+        }
+        a:hover{
+            color: #2FEBAC ;
+        }
+    
+        /*versao tablet*/
+        @media(min-width: 500px) and (max-width: 900px){
+            
         body{
             background-color: #35C074;
 
@@ -88,46 +172,91 @@
         a:hover{
             color: #2FEBAC ;
         }
+    }
+
         /*versao mobile*/
-        @media(max-width: 580px){
+        @media(min-width:100px) and (max-width: 600px){
             
-        h1{
-            padding: 1rem;
-            color: #38413E;
+        body{
+            background-color: #35C074;
         }
         form{
-            height: 400px;
+            background-color: aliceblue;
+            height: 450px;
             width: 300px;
             padding: 25px;
             margin: 25px;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-55%, -45%);
+            transform: translate(-50%, -50%);
             background: linear-gradient(to right, #4B6B60, #50967E);
             border-radius: 20px;
             border: 5px solid black;
 
-        }   
+        }
+        .conteudo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        h1{
+            padding: 2rem;
+            color: #38413E;
+        }
+        input{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 4rem;
+        }
+        label{
+            text-align: left;
+            padding-left: 17px;
+            font-style: italic;
+            color: aqua;
+        }
+        select{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 4rem;
+        }
+        button{
+            padding: 7px;
+            margin-top: 20px;
+            margin-left: 8px;
+            margin-right: 7px;
+            background-color: aquamarine;
+            color: #38413E;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
         ul{
             display: flex;
-            padding: 20px;
+            padding: 15px;
             text-decoration: none;
+            gap: 20px;
         }
         li{
             padding: 1rem;
             list-style: none;
-            padding: 8px;
-            padding-left: 20px;
+            padding: 10px;
+            padding-left: 10px;
+            
             
         }
         a{
             color: #46C098;
+            
         }
         a:hover{
             color: #2FEBAC ;
         }
-        }
+    }
 
     </style>
 
@@ -169,7 +298,7 @@
         const form = document.getElementById("form");
         const campos = document.querySelectorAll(".required")
         
-        const emailRegex = /^\w+([-+.'])*@\w+([-.']\w+)*\w+([-.]\w)+$/; 
+        const emailRegex = /^\w+([-+.'])*@\w+([-.']\w+)*\w+([-.]\w)+$/;
 
     </script>
 </html>
